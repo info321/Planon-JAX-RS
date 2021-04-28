@@ -1,0 +1,36 @@
+Apache License
+Apache License, Version 2.0
+Apache License Version 2.0
+The Apache Software License, Version 2.0
+Apache Software License - Version 2.0
+Apache License 2.0
+Apache 2.0
+Apache 2
+The Apache License, Version 2.0
+ASF 2.0
+Bouncy Castle License
+BSD
+New BSD License
+Revised BSD
+The 2-Clause BSD License
+The 3-Clause BSD License
+Common Development and Distribution License 1.0
+Common Development and Distribution License (CDDL) v1.0
+CDDL
+CDDL + GPLv2 with classpath exception
+Common Public License Version 1.0
+Eclipse Public License 1.0 (EPL-1.0)
+Eclipse Public License - Version 1.0
+GNU Library General Public License version 2
+GNU Lesser General Public License version 2.1
+GNU Library or Lesser General Public License
+LGPL 2.1
+GNU Lesser General Public License version 3
+MIT License
+The MIT License
+Mozilla Public License Version 1.0
+MPL 1.1
+Mozilla Public License Version 2.0
+Mozilla Public License 2.0 (MPL-2.0)
+The OpenLDAP Public License
+The JSON License

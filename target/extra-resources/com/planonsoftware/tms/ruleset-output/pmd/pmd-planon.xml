@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<!-- 
+    Planon TMS version info: 
+    $Header: svn://svn/TMSEE/__Platform/Maven/CodingRuleset/trunk/source/src/main/resources/com/planonsoftware/tms/ruleset/pmd/pmd-planon.xml 88224 2018-08-05 20:06:26Z raklop $ 
+-->
+<ruleset name="Basic" xmlns="http://pmd.sourceforge.net/ruleset/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description> The Basic ruleset contains a collection of good practices which should be followed. </description>
+
+    <!-- UPDATING GUIDELINES FOR TMS: Please do not exclude rules, set priority 
+		to 5 in exception section below. Excluding rules can hide some code 'smell' -->
+    <!-- ruleset references -->
+    <rule ref="rulesets/java/basic.xml"/>
+    <rule ref="rulesets/java/braces.xml"/>
+    <rule ref="rulesets/java/clone.xml"/>
+    <rule ref="rulesets/java/controversial.xml">
+        <!--We don't want to declare a constructor always. -->
+        <exclude name="AtLeastOneConstructor"/>
+        <!--Weird rule, not using it. -->
+        <exclude name="DataflowAnomalyAnalysis"/>
+        <!--We can have as many returns as we want. -->
+        <exclude name="OnlyOneReturn"/>
+        <!--This always asks for a concurrent HashMap, there is no need to always 
+			use that. -->
+        <exclude name="UseConcurrentHashMap"/>
+    </rule>
+    <rule ref="rulesets/java/coupling.xml">
+        <!--Import as much as we like. -->
+        <exclude name="ExcessiveImports"/>
+        <!--Requires specific packages and classes to be assigned to rule. -->
+        <exclude name="LoosePackageCoupling"/>
+        <!--This is way too strict, impossible to implement on any project. -->
+        <exclude name="LawOfDemeter"/>
+    </rule>
+    <rule ref="rulesets/java/design.xml">
+        <exclude name="UseLocaleWithCaseConversions"/>
+        <exclude name="SwitchStmtsShouldHaveDefault"/>
+    </rule>
+    <rule ref="rulesets/java/empty.xml"/>
+    <rule ref="rulesets/java/imports.xml"/>
+    <rule ref="rulesets/java/junit.xml"/>
+    <rule ref="rulesets/java/logging-java.xml">
+        <!--Doesn't work for slf4j and log4j. only for java.util.loggingg -->
+        <exclude name="GuardLogStatementJavaUtil"/>
+    </rule>
+    <rule ref="rulesets/java/naming.xml">
+        <exclude name="AbstractNaming"/>
+        <!--We care about making clear what the variable is used for, not length. -->
+        <exclude name="LongVariable"/>
+        <exclude name="ShortClassName"/>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml">
+        <!--Nothing wrong with this -->
+        <!-- This rule is not suitable, at the time of feaching the records from 
+			DB and create new objects inside the while loop -->
+        <!-- <exclude name="AvoidInstantiatingObjectsInLoops"/> -->
+        <!--We don't want to sacrifice code readabilty -->
+        <exclude name="LocalVariableCouldBeFinal"/>
+        <!--We don't want to sacrifice code readabilty -->
+        <exclude name="MethodArgumentCouldBeFinal"/>
+        <!--We don't want to sacrifice code readabilty -->
+        <exclude name="SimplifyStartsWith"/>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml"/>
+    <rule ref="rulesets/java/strings.xml"/>
+    <rule ref="rulesets/java/sunsecure.xml"/>
+    <rule ref="rulesets/java/typeresolution.xml"/>
+    <rule ref="rulesets/java/unnecessary.xml">
+        <!--Parentheses can improve readabilty -->
+        <exclude name="UselessParentheses"/>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml"/>
+
+    <rule name="PackageNamingRule" message="Package name should not contain 'generated', 'generatedsources', 'org.tempuri', 'org.soapxml','org.w3'" class="com.planonsoftware.tms.custom.pmd.common.PackageNamingRule">
+        <description>
+                Package name should not contain 'generated', 'generatedsources', 'org.tempuri', 'org.soapxml','org.w3'
+         </description>
+        <priority>3</priority>
+        <example>
+            <![CDATA[
+                com.planonsoftware.tms.sx
+            ]]>
+        </example>
+    </rule>
+    <rule name="VariableNamingRule" message="Variable name should not contain FREE/free string" class="com.planonsoftware.tms.custom.pmd.common.VariableNamingRule">
+        <description>
+                Variable name should not contain FREE/free string
+         </description>
+        <priority>3</priority>
+    </rule>
+
+    <rule name="AvoidUsingIgnoredSubversionFoldersInPackageNames" message="Avoid using Subversion ignored patterns (like bin, target) in package names" language="java" class="net.sourceforge.pmd.lang.rule.XPathRule">
+        <description>
+            Avoid using Subversion ignored patterns in package names, because these are ignored during a commit to subversion.
+            
+            If you decide to DO use those patterns in package names, make sure you add those folder manually to Subversion ('add' in TortoiseSVN).
+            After adding those folders manually, these folders will behave like regular folders.
+        </description>
+        <priority>5</priority>
+
+        <properties>
+            <property name="xpath">
+                <value><![CDATA[
+                  //PackageDeclaration/Name[matches(@Image,'(^|\.)(bin|target)(\.|$)')]
+                  ]]>
+                </value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts">
+        <priority>5</priority>
+        <properties>
+            <property name="problemDepth">
+                <value>5</value>
+            </property>
+        </properties>
+    </rule>
+
+
+
+    <!-- EXCEPTIONS -->
+    <!-- __________ -->
+    <!-- Priorities: 1=Blocker 2=Critical 3=Urgent 4=Important 5=Information -->
+    <rule ref="rulesets/java/comments.xml/CommentRequired">
+        <properties>
+            <property name="enumCommentRequirement" value="Unwanted"/>
+            <property name="protectedMethodCommentRequirement" value="Ignored"/>
+            <property name="publicMethodCommentRequirement" value="Ignored"/>
+            <property name="fieldCommentRequirement" value="Ignored"/>
+            <property name="headerCommentRequirement" value="Ignored"/>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/controversial.xml/AssignmentInOperand">
+        <properties>
+            <property name="allowWhile" value="true"/>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/naming.xml/ShortVariable">
+        <description>short variable names are not allowed, except: i, j, id, e, ex, pk, rs, bo </description>
+        <properties>
+            <property name="xpath">
+                <value> //VariableDeclaratorId[(string-length(@Image) &lt; 3) and (not (@Image='i')) and (not (@Image='j')) and (not (@Image='id')) and (not (@Image='e')) and (not (@Image='ex')) and (not (@Image='pk')) and (not (@Image='rs')) and (not (@Image='bo'))] [not(ancestor::ForInit)] [not((ancestor::FormalParameter) and (ancestor::TryStatement))] </value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/strictexception.xml/AvoidThrowingRawExceptionTypes">
+        <properties>
+            <property name="xpath">
+                <value> //ThrowStatement//AllocationExpression /ClassOrInterfaceType[ (@Image='Throwable' and count(//ImportDeclaration/Name[ends-with(@Image,'Throwable')]) = 0) or (@Image='Exception' and count(//ImportDeclaration/Name[ends-with(@Image,'Exception')]) = 0) or (@Image='Error' and count(//ImportDeclaration/Name[ends-with(@Image,'Error')]) = 0)
+                    <!-- modified standard rule to allow throwing RuntimeException
+					or
+					( @Image='RuntimeException'  and count(//ImportDeclaration/Name[ends-with(@Image,'RuntimeException')]) = 0)
+					--> ] </value>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="rulesets/java/basic.xml/SimplifiedTernary">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/AvoidLiteralsInIfCondition">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/NullAssignment">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/controversial.xml/UseObjectForClearerAPI">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/coupling.xml/LooseCoupling">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AccessorMethodGeneration">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/AvoidReassigningParameters">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ConfusingTernary">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ConstructorCallsOverridableMethod">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/GodClass">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/MissingBreakInSwitch">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/PreserveStackTrace">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/ReturnEmptyArrayRatherThanNull">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UncommentedEmptyMethodBody">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseUtilityClass">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/SimpleDateFormatNeedsLocale">
+        <priority>5</priority>
+        <!-- In TMS we deliver the same software to different zones and just needs 
+			to format. In case of Locale dependency the developer will use the constructor 
+			which accepts the locale. -->
+    </rule>
+    <rule ref="rulesets/java/design.xml/SingularField">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseVarargs">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/design.xml/UseVarargs">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/empty.xml/EmptyCatchBlock">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/SystemPrintln">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/logging-java.xml/AvoidPrintStackTrace">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/AvoidInstantiatingObjectsInLoops">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/PrematureDeclaration">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/optimizations.xml/UseStringBufferForStringAppends">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidCatchingGenericException">
+        <description>AvoidCatchingGenericException:  please explain why ignoring this rule</description>
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/AvoidCatchingThrowable">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strictexception.xml/ExceptionAsFlowControl">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/AvoidDuplicateLiterals">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/ConsecutiveLiteralAppends">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/strings.xml/InsufficientStringBufferDeclaration">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unnecessary.xml/UnnecessaryFinalModifier">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedFormalParameter">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateField">
+        <priority>5</priority>
+    </rule>
+    <rule ref="rulesets/java/unusedcode.xml/UnusedPrivateMethod">
+        <priority>5</priority>
+    </rule>
+
+</ruleset>

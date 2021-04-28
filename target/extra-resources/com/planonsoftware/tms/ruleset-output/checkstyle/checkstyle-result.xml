@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\connectors\ESAPIConnector.java">
+<error line="108" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="111" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="366" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="750" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="752" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="762" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="764" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\connectors\ESAPIField.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\connectors\exceptions\BadRequestParametersException.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\connectors\FieldAndValuePair.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\dto\CommonResponseDTO.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\osgi\Activator.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\ICustomServiceTeamMember.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\impl\ITeamMemberBody.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\impl\WebServiceTeamMemberJAXRS.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\TeamMemberService.java">
+<error line="137" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\utils\Constants.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\utils\MiscFunctions.java">
+<error line="103" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\utils\TMSBEUtils.java">
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\utils\TMSLogger.java">
+<error line="73" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="115" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="122" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="125" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="127" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="136" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="287" severity="warning" message="Use a logger or an explicit output stream instead of System.out or System.err." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+</file>
+</checkstyle>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.8.1" timestamp="2021-04-27T09:45:03.465">
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\connectors\ESAPIConnector.java">
+<violation beginline="1" endline="770" begincolumn="1" endcolumn="3" rule="GodClass" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#GodClass" priority="5">
+Possible God class (WMC=146, ATFD=109, TCC=0.0022988505747126436)
+</violation>
+<violation beginline="85" endline="85" begincolumn="9" endcolumn="37" rule="PrematureDeclaration" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="createBO" variable="bo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#PrematureDeclaration" priority="5">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="104" endline="104" begincolumn="9" endcolumn="40" rule="PrematureDeclaration" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="createBO" variable="newBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#PrematureDeclaration" priority="5">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="214" endline="214" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="countRowsForPVdbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="219" endline="219" begincolumn="61" endcolumn="65" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="countRowsInResultSet" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="229" endline="233" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="countRowsInResultSet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="232" endline="232" begincolumn="40" endcolumn="69" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="countRowsInResultSet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strings.html#AvoidDuplicateLiterals" priority="5">
+The String literal &quot;IPnESDatabaseQuery not found&quot; appears 7 times in this file; the first occurrence is on line 232
+</violation>
+<violation beginline="247" endline="247" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPkForBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="252" endline="252" begincolumn="52" endcolumn="56" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPkForBO" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="266" endline="266" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPksForBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="278" endline="278" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPksForBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="283" endline="283" begincolumn="59" endcolumn="63" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPksForBO" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="293" endline="309" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPkForBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="303" endline="303" begincolumn="34" endcolumn="37" rule="NullAssignment" ruleset="Controversial" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPkForBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/controversial.html#NullAssignment" priority="5">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="315" endline="327" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findPksForBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="341" endline="341" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="346" endline="346" begincolumn="53" endcolumn="57" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="357" endline="373" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="367" endline="367" begincolumn="33" endcolumn="36" rule="NullAssignment" ruleset="Controversial" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/controversial.html#NullAssignment" priority="5">
+Assigning an Object to null is a code smell.  Consider refactoring.
+</violation>
+<violation beginline="387" endline="387" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="392" endline="392" begincolumn="67" endcolumn="71" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="404" endline="416" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="430" endline="430" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findValuesForBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="442" endline="442" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findValuesForBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="447" endline="447" begincolumn="71" endcolumn="75" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findValuesForBO" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="458" endline="470" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findValuesForBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="484" endline="484" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findBOUsingPVDbQuery" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#AvoidPrintStackTrace" priority="5">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="494" endline="494" begincolumn="59" endcolumn="63" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findBO" variable="query" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'query'
+</violation>
+<violation beginline="497" endline="515" begincolumn="9" endcolumn="9" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="findBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="565" endline="565" begincolumn="42" endcolumn="62" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="getFieldAndValueFromResultSet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="5">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="567" endline="598" begincolumn="17" endcolumn="17" rule="MissingBreakInSwitch" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="getFieldAndValueFromResultSet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#MissingBreakInSwitch" priority="5">
+A switch statement does not contain a break
+</violation>
+<violation beginline="610" endline="610" begincolumn="45" endcolumn="138" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="getQueryWithSearchExpressionsSet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="667" endline="667" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeSaveNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="679" endline="679" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeSaveNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="697" endline="697" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeStateChangeNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="709" endline="709" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeStateChangeNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="727" endline="727" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeActionNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="739" endline="739" begincolumn="17" endcolumn="80" rule="PreserveStackTrace" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="executeActionNoWarningsOrConfirmations" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#PreserveStackTrace" priority="5">
+New exception is thrown in catch block, original stack trace may be lost
+</violation>
+<violation beginline="750" endline="750" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="printAvailableActionsWithParams" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.out.println is used
+</violation>
+<violation beginline="752" endline="752" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="printAvailableActionsWithParams" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.out.println is used
+</violation>
+<violation beginline="762" endline="762" begincolumn="13" endcolumn="30" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="printAvailableActionsWithParams" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.out.println is used
+</violation>
+<violation beginline="764" endline="764" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.connectors" class="ESAPIConnector" method="printAvailableActionsWithParams" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\TeamMemberService.java">
+<violation beginline="41" endline="41" begincolumn="17" endcolumn="23" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="getSummary" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="5">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="100" endline="100" begincolumn="40" endcolumn="73" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="doAddTeamMember" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="5">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+<violation beginline="101" endline="101" begincolumn="14" endcolumn="15" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="doAddTeamMember" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="5">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="103" endline="103" begincolumn="44" endcolumn="77" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="doAddTeamMember" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="5">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+<violation beginline="130" endline="130" begincolumn="9" endcolumn="37" rule="PrematureDeclaration" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="createBO" variable="bo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#PrematureDeclaration" priority="5">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="137" endline="137" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services" class="TeamMemberService" method="createBO" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.out.println is used
+</violation>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\impl\WebServiceTeamMemberJAXRS.java">
+<violation beginline="41" endline="50" begincolumn="13" endcolumn="13" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.impl" class="WebServiceTeamMemberJAXRS" method="addTeamMember" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="53" endline="53" begincolumn="18" endcolumn="26" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.impl" class="WebServiceTeamMemberJAXRS" method="addTeamMember" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/strictexception.html#AvoidCatchingGenericException" priority="5">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="C:\PlanonSoftware\TMS\Projects\Dartmouth\WebServicesQueryJAXRS\source\src\main\java\us\planonsoftware\tms\dartmouth\webservice\jaxrs\services\utils\MiscFunctions.java">
+<violation beginline="1" endline="312" begincolumn="1" endcolumn="3" rule="GodClass" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#GodClass" priority="5">
+Possible God class (WMC=76, ATFD=17, TCC=0.009523809523809525)
+</violation>
+<violation beginline="28" endline="28" begincolumn="33" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" variable="UTF8" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="5">
+Avoid unused private fields such as 'UTF8'.
+</violation>
+<violation beginline="80" endline="80" begincolumn="46" endcolumn="60" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="writeToFile" variable="pathToDirectory" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'pathToDirectory'
+</violation>
+<violation beginline="90" endline="90" begincolumn="32" endcolumn="140" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="92" endline="92" begincolumn="53" endcolumn="89" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="5">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+<violation beginline="95" endline="95" begincolumn="32" endcolumn="71" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="103" endline="103" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Java Logging" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="writeToFile" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/logging-java.html#SystemPrintln" priority="5">
+System.err.println is used
+</violation>
+<violation beginline="109" endline="109" begincolumn="62" endcolumn="75" rule="AvoidReassigningParameters" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="moveFileTo" variable="destinationDir" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#AvoidReassigningParameters" priority="5">
+Avoid reassigning parameters such as 'destinationDir'
+</violation>
+<violation beginline="119" endline="119" begincolumn="22" endcolumn="23" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="moveFileTo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="5">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="119" endline="119" begincolumn="31" endcolumn="67" rule="SimpleDateFormatNeedsLocale" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="moveFileTo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#SimpleDateFormatNeedsLocale" priority="5">
+When instantiating a SimpleDateFormat object, specify a Locale
+</violation>
+<violation beginline="121" endline="121" begincolumn="22" endcolumn="23" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="moveFileTo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="5">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="127" endline="128" begincolumn="30" endcolumn="96" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="moveFileTo" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="139" endline="139" begincolumn="18" endcolumn="19" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="getParameterAsStringList" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="5">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="154" endline="154" begincolumn="63" endcolumn="113" rule="ConfusingTernary" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="getFormattedStackTrace" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#ConfusingTernary" priority="5">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="154" endline="154" begincolumn="41" endcolumn="42" rule="UseStringBufferForStringAppends" ruleset="Optimization" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="getFormattedStackTrace" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/optimizations.html#UseStringBufferForStringAppends" priority="5">
+Prefer StringBuffer over += for concatenating strings
+</violation>
+<violation beginline="304" endline="304" begincolumn="36" endcolumn="53" rule="UseVarargs" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="hasValue" variable="parameter" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseVarargs" priority="5">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="308" endline="308" begincolumn="35" endcolumn="52" rule="UseVarargs" ruleset="Design" package="us.planonsoftware.tms.dartmouth.webservice.jaxrs.services.utils" class="MiscFunctions" method="noValue" variable="parameter" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/design.html#UseVarargs" priority="5">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+</file>
+</pmd>

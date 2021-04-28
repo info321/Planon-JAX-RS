@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Planon TMS version info:
+  $Header: svn://svn/TMSEE/__Platform/Maven/CodingRuleset/trunk/source/src/main/resources/com/planonsoftware/tms/ruleset/findbugs/findbugs-suppressions.xml 77099 2017-12-03 21:01:22Z raklop $
+-->
+<FindBugsFilter>
+	<!-- Nested packages are not included by the Package filter, so we need 
+		a regexp... ~.*\.generated-sources\..* -->
+	<Match>
+		<Package name="~.*\.generated(sources)*\..*|org\.(tempuri|soapxml|w3)\..*" />
+	</Match>
+</FindBugsFilter>

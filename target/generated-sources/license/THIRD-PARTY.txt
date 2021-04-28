@@ -1,0 +1,7 @@
+
+Lists of 5 third-party dependencies.
+     (ASF 2.0) cglib (cglib:cglib:3.3.0 - https://github.com/cglib/cglib/cglib)
+     (Common Development and Distribution License (CDDL) v1.0) JavaBeans Activation Framework (JAF) (javax.activation:activation:1.1 - http://java.sun.com/products/javabeans/jaf/index.jsp)
+     (CDDL) (GPLv2+CE) JavaMail API (compat) (javax.mail:mail:1.5.0-b01 - http://kenai.com/projects/javamail/mail)
+     (Apache License 2.0) (LGPL 2.1) (MPL 1.1) Javassist (org.javassist:javassist:3.25.0-GA - http://www.javassist.org/)
+     (BSD) asm (org.ow2.asm:asm:7.1 - http://asm.ow2.org/)

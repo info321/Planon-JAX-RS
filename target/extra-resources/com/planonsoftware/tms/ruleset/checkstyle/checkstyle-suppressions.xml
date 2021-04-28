@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<!-- 
+  Planon TMS version info:
+  $Header: svn://svn/TMSEE/__Platform/Maven/CodingRuleset/trunk/source/src/main/resources/com/planonsoftware/tms/ruleset/checkstyle/checkstyle-suppressions.xml 77099 2017-12-03 21:01:22Z raklop $
+-->
+<suppressions>
+    <suppress files="[/\\]target[/\\]" checks=".*"/>
+</suppressions>
